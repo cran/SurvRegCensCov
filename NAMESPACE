@@ -1,0 +1,25 @@
+## which functions shall be accessible by the users?
+export(LoglikNormalCens,
+       LoglikLogisticCens,
+       LoglikGammaCens,
+       LoglikWeibullCens,
+       ParamSampleCens,
+       LoglikNormalDeltaCens,
+       NormalMeanDiffCens,
+       CDF,
+       h_conditional,
+       S_conditional,
+       WeibullIntegrate,
+       LoglikWeibullSurvRegCens,
+       SurvRegCens,
+       survtime,
+       F_time,
+       TimeSampleWeibull,
+       ConvertWeibull,
+       WeibullReg,
+       WeibullDiag
+)
+importFrom(numDeriv,
+           hessian)
+importFrom(survival,
+           survfit, survreg)

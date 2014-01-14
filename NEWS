@@ -1,0 +1,3 @@
+SurvRegCensCov_1.0 (initial version):
+---------------------------------
+- Provide functions for Weibull regression with a censored covariate and to estimate parameters from a censored sample.
