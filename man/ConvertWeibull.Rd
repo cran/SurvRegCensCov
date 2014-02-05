@@ -12,18 +12,18 @@ Transforms output from \code{\link{survreg}} using the Weibull distribution to a
 \details{    
 The \code{\link{survreg}} function fits a Weibull accelerated failure time model of the form 
 
-\deqn{\log t = \mu + \gamma^T Z + \sigma W,}{log t = \mu + \gamma^T Z + \sigma W,} 
+\deqn{\log t = \mu + \alpha^T Z + \sigma W,}{log t = \mu + \alpha^T Z + \sigma W,} 
 
 where \eqn{Z} is a matrix of covariates, and \eqn{W} has the extreme value distribution, \eqn{\mu} is the intercept, 
-\eqn{\gamma} is a vector of parameters for each of the covariates, and \eqn{\sigma} is the scale. The usual 
+\eqn{\alpha} is a vector of parameters for each of the covariates, and \eqn{\sigma} is the scale. The usual 
 parameterization of the model, however, is defined by hazard function 
 
-\deqn{h(t|Z) = \alpha \lambda t^{\alpha - 1} \exp(\beta^T Z).}{h(t|Z) = \alpha \lambda t^{\alpha - 1} exp(\beta^T Z).}
+\deqn{h(t|Z) = \gamma \lambda t^{\gamma - 1} \exp(\beta^T Z).}{h(t|Z) = \gamma \lambda t^{\gamma - 1} exp(\beta^T Z).}
 
-The transformation is as follows: \eqn{\alpha = 1/\sigma}, \eqn{\lambda = \exp(-\mu/\sigma)}{\lambda = exp(-\mu/\sigma)}, and 
-\eqn{\beta=-\gamma/\sigma}, and estimates of the standard errors can be found using the delta method.
+The transformation is as follows: \eqn{\gamma = 1/\sigma}, \eqn{\lambda = \exp(-\mu/\sigma)}{\lambda = exp(-\mu/\sigma)}, and 
+\eqn{\beta=-\alpha/\sigma}, and estimates of the standard errors can be found using the delta method.
 
-The Weibull distribution has the advantage of having two separate interpretations. The first, via proportional hazards, leads to a hazard ratio, defined by \eqn{\exp \beta}{exp \beta}. The second, of accelerated failure times, leads to an event time ratio (also known as an acceleration factor), defined by \eqn{\exp (-\beta/\alpha)}{exp (-\beta/\alpha)}.
+The Weibull distribution has the advantage of having two separate interpretations. The first, via proportional hazards, leads to a hazard ratio, defined by \eqn{\exp \beta}{exp \beta}. The second, of accelerated failure times, leads to an event time ratio (also known as an acceleration factor), defined by \eqn{\exp (-\beta/\gamma)}{exp (-\beta/\gamma)}.
 
 Further details regarding the transformations of the parameters and their standard errors can be found in Klein and 
 Moeschberger (2003, Chapter 12). An explanation of event time ratios for the accelerated failure time interpretation of the model can be found in Carroll (2003). A general overview can be found in the \code{vignette("weibull")} of this package.

@@ -9,8 +9,8 @@
 \tabular{ll}{
 Package: \tab SurvRegCensCov\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-01-14\cr
+Version: \tab 1.1\cr
+Date: \tab 2014-02-05\cr
 License: \tab GPL (>=2) \cr
 }
 }
@@ -31,13 +31,17 @@ Hubeaux, S. (2013).
 Parametric Surival Regression Model with left- and/or interval-censored covariate. 
 Technical report, Biostatistics Oncology, F. Hoffmann-La Roche Ltd.	
 
+Hubeaux, S. and Rufibach, K. (2014).
+\bold{SurvRegCensCov}: Weibull Regression for a Right-Censored Endpoint with a Censored Covariate.
+Preprint, \url{http://arxiv.org/abs/1402.0432}.
+
 Lynn, H. S. (2001). 
 Maximum likelihood inference for left-censored HIV RNA data. 
 \emph{Stat. Med.}, \bold{20}, 33--45.
 	
 Sattar, A., Sinha, S. K. and Morris, N. J. (2012). 
 A Parametric Survival Model When a Covariate is Subject to Left-Censoring. 
-\emph{Biometrics & Biostatistics}, \bold{3}.
+\emph{Biometrics & Biostatistics}, \bold{S3}(2).
 }
 
 \keyword{package}

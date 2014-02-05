@@ -26,7 +26,11 @@ Maximum likelihood inference for left-censored HIV RNA data.
 \emph{Stat. Med.}, \bold{20}, 33--45.
 }
 
-\author{Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch}}
+\author{
+Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch} 
+
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}
+}
 
 \note{Function not intended to be invoked by the user.}
 

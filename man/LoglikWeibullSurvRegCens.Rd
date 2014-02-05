@@ -28,10 +28,14 @@ Technical report, Biostatistics Oncology, F. Hoffmann-La Roche Ltd.
 	
 Sattar, A., Sinha, S. K. and Morris, N. J. (2012). 
 A Parametric Survival Model When a Covariate is Subject to Left-Censoring. 
-\emph{Biometrics & Biostatistics}, \bold{3}.
+\emph{Biometrics & Biostatistics}, \bold{S3}(2).
 }
 
-\author{Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch}}
+\author{
+Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch} 
+
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}
+}
 
 \note{Function not intended to be invoked by the user.}
 

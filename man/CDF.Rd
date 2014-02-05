@@ -7,7 +7,11 @@
   \item{c}{Value at which the CDF is to be evaluated.}
   \item{density}{Density function.}
 }
-\author{Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch}}
+\author{
+Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch} 
+
+Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}
+}
 
 \note{Function not intended to be invoked by the user.}
 

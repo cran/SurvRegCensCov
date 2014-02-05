@@ -1,3 +1,9 @@
+SurvRegCensCov_1.1:
+---------------------------------
+- Updated the vignette and some help files to reflect notation of paper and package.
+- Added function censContVar.
+
+
 SurvRegCensCov_1.0 (initial version):
 ---------------------------------
 - Provide functions for Weibull regression with a censored covariate and to estimate parameters from a censored sample.

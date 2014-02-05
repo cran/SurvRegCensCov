@@ -1,5 +1,6 @@
 ## which functions shall be accessible by the users?
-export(LoglikNormalCens,
+export(censorContVar,
+       LoglikNormalCens,
        LoglikLogisticCens,
        LoglikGammaCens,
        LoglikWeibullCens,

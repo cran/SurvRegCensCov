@@ -23,27 +23,27 @@ if(require(SurvRegCensCov) == FALSE){install.packages("SurvRegCensCov"); library
 \maketitle
 
 Weibull accelerated failure time regression can be performed in \prog{R} using the \pkg{survreg} function. The results are not, however, presented in a form in which the Weibull distribution is usually given. Accelerated failure time models are usually given by
-$$\log T = Y = \mu + \boldsymbol{\gamma}^T \mathbf{z} + \sigma W,$$
+$$\log T = Y = \mu + \boldsymbol{\alpha}^T \mathbf{z} + \sigma W,$$
 where $\mathbf{z}$ are set of covariates, and $W$ has the extreme value distribution. Given transformations
 \begin{align*}
-\alpha & =  1/\sigma, \\
+\gamma & =  1/\sigma, \\
 \lambda & = \exp(-\mu/\sigma), \\
-\boldsymbol{\beta} & = -\boldsymbol{\gamma}/\sigma,
+\boldsymbol{\beta} & = -\boldsymbol{\alpha}/\sigma,
 \end{align*}
 we have a Weibull model with baseline hazard of 
-$$h(x|\mathbf{z}) = (\alpha \lambda t^{\alpha - 1}) \exp(\boldsymbol{\beta}^T \mathbf{z}).$$
+$$h(x|\mathbf{z}) = (\gamma \lambda t^{\gamma - 1}) \exp(\boldsymbol{\beta}^T \mathbf{z}).$$
 
 Further, the \pkg{survreg} function generally gives $\log \sigma$, rather than $\sigma$ as output. The function \code{WeibullReg} (along with \code{ConvertWeibull}) solves this problem. Hazard ratios ($\exp{(\boldsymbol{\beta}_i)}$) are additionally produced.
 
-The function also produces the ``event time ratio'' (ETR, $\exp{(-\boldsymbol{\beta}_i/\alpha)} = \exp \boldsymbol{\gamma}_i$), as discussed in \cite{carroll_03}. This ratio quantifies the relative difference in time it takes to achieve the $p$th percentile between two levels of a covariate. The $p$th percentile of the (covariate-adjusted) Weibull distribution occurs at 
-$$t_p = \left[ \frac{-\log p}{\lambda e^{\boldsymbol{\beta}^T \mathbf{z}}} \right]^{1/\alpha}.$$
+The function also produces the ``event time ratio'' (ETR, $\exp{(-\boldsymbol{\beta}_i/\gamma)} = \exp \boldsymbol{\alpha}_i$), as discussed in \cite{carroll_03}. This ratio quantifies the relative difference in time it takes to achieve the $p$th percentile between two levels of a covariate. The $p$th percentile of the (covariate-adjusted) Weibull distribution occurs at 
+$$t_p = \left[ \frac{-\log p}{\lambda e^{\boldsymbol{\beta}^T \mathbf{z}}} \right]^{1/\gamma}.$$
 Then the ratio of times for a covariate with value $z_1$ versus values $z_0$, with parameter estimate $\beta$,  can then be computed as:
 \begin{align*}
-\frac{t_B}{t_A}  & = \left[ \frac{-\log p}{\lambda e^{\boldsymbol{\beta} z_1}} \right]^{1/\alpha} \left[ \frac{\lambda e^{\boldsymbol{\beta} z_0}}{-\log p} \right]^{1/\alpha} \\
-& = \exp \left\{\frac{\boldsymbol{\beta} (z_0-z_1)}{\alpha} \right\}.
+\frac{t_B}{t_A}  & = \left[ \frac{-\log p}{\lambda e^{\boldsymbol{\beta} z_1}} \right]^{1/\gamma} \left[ \frac{\lambda e^{\boldsymbol{\beta} z_0}}{-\log p} \right]^{1/\gamma} \\
+& = \exp \left\{\frac{\boldsymbol{\beta} (z_0-z_1)}{\gamma} \right\}.
 %& = \exp \left\{\frac{- \beta_B}{\alpha} \right\}.
 \end{align*} 
-Thus, if we are comparing treatment B to treatment A, where the parameter estimate for treatment B is $\boldsymbol{\beta}_{\mathrm{trt}}$, then the ETR is $\exp\{-\boldsymbol{\beta}_{\mathrm{trt}}/\alpha\}$.
+Thus, if we are comparing treatment B to treatment A, where the parameter estimate for treatment B is $\boldsymbol{\beta}_{\mathrm{trt}}$, then the ETR is $\exp\{-\boldsymbol{\beta}_{\mathrm{trt}}/\gamma\}$.
 
 For example if the ETR for treatments A vs B is 1.2, then the amount of time it takes for $p$ percent of patients with treatment A to have the event is predicted to be about 20\% longer than it takes for the same percentage of patients with treatment B to experience an event. (That is, treatment B is worse.)  For this reason, the ETR can also be called an ``acceleration factor.''
 
@@ -95,7 +95,7 @@ WeibullDiag(Surv(time, death) ~ factor(stage), data = larynx,
 @
 
 %\bibliographystyle{ims}
-\bibliography{weibull}
+\bibliography{refs}
 
 \end{document}
 

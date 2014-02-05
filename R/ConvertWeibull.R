@@ -11,11 +11,11 @@ ConvertWeibull <- function (model, conf.level = 0.95){
     lambda <- exp(-mu / sigma)
     alpha <- 1 / sigma
     tmp <- c(lambda, alpha)
-    names(tmp) <- c("lambda", "alpha")
+    names(tmp) <- c("lambda", "gamma")
     if (!Int.Only){
         beta <- -gamma / sigma
         tmp <- c(lambda, alpha, beta)
-        names(tmp) <- c("lambda", "alpha", names(summary(model)$coef[2:(k + 1)]))
+        names(tmp) <- c("lambda", "gamma", names(summary(model)$coef[2:(k + 1)]))
     }
 
     var1 <- summary(model)$var
