@@ -1,6 +1,6 @@
-6c5048ff4e533d5364a90b631307dd6f *DESCRIPTION
+839e387b53678cf9a11a30bca4ab531b *DESCRIPTION
 276f2bde47d569d81ad7055b074dd048 *NAMESPACE
-d8ba3bca0126434580c8d34d3db8d2e8 *NEWS
+38f074b256c788b4a6be748f959734e1 *NEWS
 ae47d2cade4c76ac8526b5691559402a *R/CDF.R
 89444cd5fb91cdffcb45590df95520bb *R/ConvertWeibull.R
 28f8f0d4d8c52586fdb6d4a8eeac0749 *R/F_time.R
@@ -17,7 +17,7 @@ bbb5ad4d35de633d0c0526fcae8b2348 *R/S_conditional.R
 b95163582b2c8505f468cdd278dcc53c *R/TimeSampleWeibull.R
 ecbdb5038c4eb07a7d1bd06a78da4709 *R/WeibullDiag.R
 0cd0ba44f2b17d5bb26d0ba000f0faac *R/WeibullIntegrate.R
-6bd1487f0cbd4e696b78fd73a02806c4 *R/WeibullReg.R
+1820c352699b6f28804d97eaaa97ec4a *R/WeibullReg.R
 06d1412ee07479fc4b45be21aa12c6e2 *R/censorContVar.r
 31fe6ff9558eb8736808da5b12ced911 *R/h_conditional.R
 0c424f49c62c1b5a4ee9a3751a381130 *R/survtime.R
@@ -25,7 +25,7 @@ ecbdb5038c4eb07a7d1bd06a78da4709 *R/WeibullDiag.R
 0ae988e090442fd28523736812d7f124 *data/larynx.rda
 8e4f09057d554c3cd8851702a5d1b6c7 *inst/doc/weibull.R
 45742cc78c079e674e1470fbfa68ab38 *inst/doc/weibull.Rnw
-99c36939558d7e48c60372a231cf0375 *inst/doc/weibull.pdf
+e58a49f5c704e6cde4566d7035aedb81 *inst/doc/weibull.pdf
 c394c085261344ada4164bf2a23d37d6 *man/CDF.Rd
 e98abec17010bfd63825a44ab667b4c0 *man/ConvertWeibull.Rd
 3e228162ac17457f3b9cdf90369c2901 *man/LoglikCens.Rd
@@ -34,12 +34,12 @@ e98abec17010bfd63825a44ab667b4c0 *man/ConvertWeibull.Rd
 ee13f503a790c1cf594abca688a1b2c4 *man/NormalMeanDiffCens.Rd
 935240125b2f3ad6ab27cdebd7b9bde1 *man/ParamSampleCens.Rd
 d1ff8427735fb1fb2b43d1a379c566a5 *man/SurvRegCens.Rd
-be8c768bda4a709927c1f3f76f6bea0e *man/SurvRegCensCov-package.Rd
+6c648e39a17adaffa6d8e44bc89c109f *man/SurvRegCensCov-package.Rd
 af2f33e07320aaa993ddf75e2c7032ab *man/TimeSampleWeibull.Rd
 269f74de309908d31454ae76b9918c93 *man/WeibullDiag.Rd
 624083c976a6db79fa23b5a30d8889aa *man/WeibullIntegrate.Rd
 b22caa12b60e30047bb6c1dd67fa0568 *man/WeibullReg.Rd
 40dda7202bb81243933126180b499ebe *man/censorContVar.Rd
 4548e1a2acc02452fc0d1b72ab22177a *man/larynx.Rd
-41fdfb0f5dbc9ecfa4783b11f3fc487c *vignettes/refs.bib
+508cc59ba1d01cae06bc348c181a19d9 *vignettes/refs.bib
 45742cc78c079e674e1470fbfa68ab38 *vignettes/weibull.Rnw

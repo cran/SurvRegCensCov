@@ -1,3 +1,7 @@
+SurvRegCensCov_1.2:
+---------------------------------
+- The confidence intervals in WeibullReg were computed using a wrong confidence level. Has now been corrected.
+
 SurvRegCensCov_1.1:
 ---------------------------------
 - Updated the vignette and some help files to reflect notation of paper and package.
