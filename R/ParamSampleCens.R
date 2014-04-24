@@ -1,6 +1,6 @@
 ParamSampleCens <- function(censdata, dist = c("normal", "logistic", "gamma", "weibull")[1], null.values = c(0, 1), conf.level = 0.95, initial = NULL){
 
-     censdata[is.na(censdata[,1])==FALSE & is.na(censdata[,2])==TRUE,2] <- Inf
+     censdata[is.na(censdata[, 1]) == FALSE & is.na(censdata[,2]) == TRUE, 2] <- Inf
      Delta <- matrix(1, nrow = nrow(censdata), ncol = 1)
      Delta[is.na(censdata[, 1]) == TRUE & is.na(censdata[, 2]) == FALSE] <- 0
      Delta[is.na(censdata[, 1]) == FALSE & is.na(censdata[, 2]) == FALSE & censdata[, 1] != censdata[, 2], 1] <- 0

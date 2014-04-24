@@ -18,7 +18,11 @@ export(censorContVar,
        TimeSampleWeibull,
        ConvertWeibull,
        WeibullReg,
-       WeibullDiag
+       WeibullDiag,
+       summary.src,
+       print.src,
+       coef.src,
+       logLik.src
 )
 importFrom(numDeriv,
            hessian)

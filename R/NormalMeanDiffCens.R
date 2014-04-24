@@ -1,10 +1,10 @@
 NormalMeanDiffCens <- function(censdata1, censdata2, conf.level = 0.95, null.values = c(0, 0, 1, 1)){
     
      # initial=(mu1, delta, sigma1, sigma2); delta = mu1 - mu2
-     initial <- c(mean(censdata1[is.na(censdata1[,2])==FALSE, 2]), mean(censdata1[is.na(censdata1[,2])==FALSE, 2]) - mean(censdata2[is.na(censdata2[,2])==FALSE, 2]), sd(censdata1[is.na(censdata1[,2])==FALSE, 2]), sd(censdata2[is.na(censdata2[,2])==FALSE, 2]))
+     initial <- c(mean(censdata1[is.na(censdata1[, 2]) == FALSE, 2]), mean(censdata1[is.na(censdata1[, 2]) == FALSE, 2]) - mean(censdata2[is.na(censdata2[, 2]) == FALSE, 2]), sd(censdata1[is.na(censdata1[, 2]) == FALSE, 2]), sd(censdata2[is.na(censdata2[, 2]) == FALSE, 2]))
      signif.level <- 1 - conf.level
      
-     censdata1[is.na(censdata1[,1])==FALSE & is.na(censdata1[,2])==TRUE,2] <- Inf
+     censdata1[is.na(censdata1[, 1]) == FALSE & is.na(censdata1[, 2]) == TRUE, 2] <- Inf
      Delta1 <- matrix(1, nrow = nrow(censdata1), ncol = 1)
      Delta1[is.na(censdata1[, 1]) == TRUE & is.na(censdata1[, 2]) == FALSE] <- 0
      Delta1[is.na(censdata1[, 1]) == FALSE & is.na(censdata1[, 2]) == FALSE & censdata1[, 1] != censdata1[, 2], 1] <- 0

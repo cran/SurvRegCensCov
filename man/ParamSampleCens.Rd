@@ -5,7 +5,7 @@
 \usage{ParamSampleCens(censdata, dist = c("normal", "logistic", "gamma", "weibull")[1], 
      null.values = c(0, 1), conf.level = 0.95, initial = NULL)}
 \arguments{
-  \item{censdata}{A dataframe of two columns, describing each observed value as an interval. The left column contains either \code{NA} for left censored observations, the left bound of the interval for interval censored observations, or the observed value for non-censored observations. The right column contains either \code{NA} for right censored observations, the right bound of the interval for interval censored observations, or the observed value for non-censored observations.}
+  \item{censdata}{Dataframe that contains censored data, format as specified by \code{code = interval2} in \code{\link{Surv}}.}
   \item{dist}{Assumed distribution of the sample.}
   \item{null.values}{Fixed values for hypothesis tests.}
   \item{conf.level}{Confidence level of confidence intervals.}  
@@ -46,33 +46,20 @@ prop.cens <- 0.35
 set.seed(2013)
 mu <- 3.5
 sigma <- 1
-x <- rnorm(n, mean = mu, sd = sigma)
 LOD <- qnorm(prop.cens, mean = mu, sd = sigma)
-x[x <= LOD] <- LOD
-index.noncens <- which(x > LOD)
-left <- rep(NA, n)
-left[index.noncens] <- x[index.noncens]
-s1 <- cbind(left, x)
-
+x1 <- rnorm(n, mean = mu, sd = sigma)
+s1 <- censorContVar(x1, LLOD = LOD)
 ParamSampleCens(censdata = s1)
 
 
 ## example with an interval-censored Normal sample
 set.seed(2013)
-x <- rnorm(n, mean = mu, sd = sigma)
-min.value <- min(x)
-LOD <- qnorm(0.35, mean = mu, sd = sigma)
-x[x <= LOD] <- LOD
-index.noncens <- which(x > LOD)
-left <- rep(NA, n)
-left[index.noncens] <- x[index.noncens]
-
-index.cens <- which(x <= LOD)
-index.interval <- index.cens[index.cens >= 250]
-left[index.interval] <- min.value
-s2 <- cbind(left, x)
-
+x2 <- rnorm(n, mean = mu, sd = sigma)
+LOD <- qnorm(prop.cens / 2, mean = mu, sd = sigma)
+UOD <- qnorm(1 - prop.cens / 2, mean = mu, sd = sigma)
+s2 <- censorContVar(x2, LLOD = LOD, ULOD = UOD)
 ParamSampleCens(censdata = s2)
+
 
 \dontrun{
 ## compare to fitdistrplus

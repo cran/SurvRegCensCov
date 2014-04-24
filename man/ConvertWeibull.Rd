@@ -44,7 +44,7 @@ Klein, J. and Moeschberger, M. (2003).
 }
 \author{Sarah R. Haile, \email{sarah.haile@gmail.com}}
  
-\seealso{Requires the package \pkg{survival}. This function is used by \code{\link{WeibullReg}}.}
+\seealso{This function is used by \code{\link{WeibullReg}}.}
 \examples{
 data(larynx)
 ConvertWeibull(survreg(Surv(time, death) ~ stage + age, larynx), conf.level = 0.95)

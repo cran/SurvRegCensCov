@@ -5,8 +5,7 @@
 \title{Survival Times of Larynx Cancer Patients}
 \description{
 A study of 90 males with laryngeal cancer was performed, comparing survival times. Each patient's age, year of 
-diagnosis, and disease stage was noted. Study published in Kardaun (1983), and available at the website for 
-Klein and Moeschberger (2003).
+diagnosis, and disease stage was noted, see Kardaun (1983) and Klein and Moeschberger (2003).
 }
 \usage{data(larynx)}
 \format{
