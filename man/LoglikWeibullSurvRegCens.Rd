@@ -32,7 +32,7 @@ A Parametric Survival Model When a Covariate is Subject to Left-Censoring.
 }
 
 \author{
-Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch} 
+Stanislas Hubeaux, \email{stanislas.hubeaux@alumni.epfl.ch} 
 
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}
 }

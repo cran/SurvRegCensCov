@@ -59,8 +59,8 @@ SurvRegCens <- function(formula, data = parent.frame(), Density, initial, conf.l
      # extract further explanatory variables used in formula on RHS, if any
      nam1 <- colnames(X)[-i.surv]
      CovariateNonCens <- X[, -i.surv]
+     if (length(colnames(X)[-i.surv]) == 0){CovariateNonCens <- NULL}
      if (is.null(CovariateNonCens) == FALSE){CovariateNonCens <- as.matrix(CovariateNonCens)}
-     if (ncol(CovariateNonCens) == 0){CovariateNonCens <- NULL}
      # ----------------------------------------------------------------------------
      
      signif.level <- 1 - conf.level

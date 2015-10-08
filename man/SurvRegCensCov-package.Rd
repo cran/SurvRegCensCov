@@ -9,13 +9,13 @@
 \tabular{ll}{
 Package: \tab SurvRegCensCov\cr
 Type: \tab Package\cr
-Version: \tab 1.3\cr
-Date: \tab 2014-04-24\cr
+Version: \tab 1.4\cr
+Date: \tab 2015-10-02\cr
 License: \tab GPL (>=2) \cr
 }
 }
 \author{
-Stanislas Hubeaux (maintainer), \email{stanislas.hubeaux@epfl.ch} 
+Stanislas Hubeaux (maintainer), \email{stanislas.hubeaux@alumni.epfl.ch} 
 
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}
 

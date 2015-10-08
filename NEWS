@@ -1,3 +1,7 @@
+SurvRegCensCov_1.4:
+---------------------------------
+- Updated author and maintainer email address.
+
 SurvRegCensCov_1.3:
 ---------------------------------
 - Added formula interface to SurvRegCens().

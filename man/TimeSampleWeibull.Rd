@@ -17,6 +17,6 @@ TimeSampleWeibull(covariate_noncens = NULL, covariate_cens, lambda, gamma, beta)
 
 \note{The use of this function is illustrated in \code{\link{SurvRegCens}}.}
 
-\author{Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch}} 
+\author{Stanislas Hubeaux, \email{stanislas.hubeaux@alumni.epfl.ch}} 
 
 \keyword{methods}

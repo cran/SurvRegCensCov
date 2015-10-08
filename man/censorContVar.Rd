@@ -11,7 +11,7 @@
 \value{A \code{data.frame} as specified by \code{code = interval2} in \code{\link{Surv}}.}
 
 \author{
-Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch} 
+Stanislas Hubeaux, \email{stanislas.hubeaux@alumni.epfl.ch} 
 
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}
 }

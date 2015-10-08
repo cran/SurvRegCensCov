@@ -22,6 +22,6 @@ WeibullIntegrate(x, x_i_noncens = NULL, density, param_y_i,
 
 \note{Function is not intended to be invoked by the user.}
 
-\author{Stanislas Hubeaux, \email{stanislas.hubeaux@epfl.ch}}
+\author{Stanislas Hubeaux, \email{stanislas.hubeaux@alumni.epfl.ch}}
 
 \keyword{methods}

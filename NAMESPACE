@@ -18,13 +18,18 @@ export(censorContVar,
        TimeSampleWeibull,
        ConvertWeibull,
        WeibullReg,
-       WeibullDiag,
-       summary.src,
-       print.src,
-       coef.src,
-       logLik.src
+       WeibullDiag
 )
 importFrom(numDeriv,
            hessian)
 importFrom(survival,
            survfit, survreg)
+importFrom(graphics,
+           legend, plot)
+importFrom(stats,
+           dbinom, dgamma, dlogis, dnorm, dweibull, integrate, model.extract, model.frame, optim, pchisq, pgamma, plogis, pnorm, pweibull, qnorm, runif, sd, uniroot)
+S3method(print, src)
+S3method(coef, src) 
+S3method(logLik, src) 
+S3method(summary, src) 
+
