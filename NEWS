@@ -1,3 +1,10 @@
+SurvRegCensCov_1.5:
+---------------------------------
+- Corrected typo in TimeSampleWeibull help file.
+- Added main publication in DESCRIPTION file.
+- Updated author and maintainer email address.
+- Update URL links which were not working anymore.
+
 SurvRegCensCov_1.4:
 ---------------------------------
 - Updated author and maintainer email address.

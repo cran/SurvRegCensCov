@@ -15,14 +15,14 @@ Technical report, Biostatistics Oncology, F. Hoffmann-La Roche Ltd.
 
 Hubeaux, S. and Rufibach, K. (2014).
 \bold{SurvRegCensCov}: Weibull Regression for a Right-Censored Endpoint with a Censored Covariate.
-Preprint, \url{http://arxiv.org/abs/1402.0432}.
+Preprint, \url{https://arxiv.org/abs/1402.0432}.
 
 Sattar, A., Sinha, S. K. and Morris, N. J. (2012). 
 A Parametric Survival Model When a Covariate is Subject to Left-Censoring. 
 \emph{Biometrics & Biostatistics}, \bold{S3}(2).
 }
 \author{
-Stanislas Hubeaux, \email{stanislas.hubeaux@alumni.epfl.ch} 
+Stanislas Hubeaux, \email{stan.hubeaux@bluewin.ch} 
 
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}
 }

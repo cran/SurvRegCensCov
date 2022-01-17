@@ -19,7 +19,7 @@ diagnosis, and disease stage was noted, see Kardaun (1983) and Klein and Moeschb
   }
 }
 \source{
-\url{http://www.mcw.edu/FileLibrary/Groups/Biostatistics/Publicfiles/DataFromSection/DataFromSectionTXT/Data_from_section_1.8.txt}
+\url{https://www.mcw.edu/-/media/MCW/Departments/Biostatistics/datafromsection18.txt?la=en}
 }
 \references{
 Kardaun, O. (1983).

@@ -33,7 +33,7 @@ Maximum likelihood inference for left-censored HIV RNA data.
 \note{Functions with similar functionality are provided in the package \pkg{fitdistrplus}.}
 
 \author{
-Stanislas Hubeaux, \email{stanislas.hubeaux@alumni.epfl.ch} 
+Stanislas Hubeaux, \email{stan.hubeaux@bluewin.ch} 
 
 Kaspar Rufibach, \email{kaspar.rufibach@gmail.com} \cr \url{http://www.kasparrufibach.ch}
 }
