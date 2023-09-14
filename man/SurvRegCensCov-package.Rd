@@ -1,6 +1,7 @@
 \name{SurvRegCensCov-package}
 \alias{SurvRegCensCov.package}
 \alias{SurvRegCensCov}
+\alias{SurvRegCensCov-package}
 \docType{package}
 \title{Weibull Regression for a Right-Censored Endpoint with Interval-Censored Covariates}
 \description{The function \code{\link{SurvRegCens}} of this package allows estimation of a Weibull Regression for a right-censored endpoint, one interval-censored covariate, and an arbitrary number of non-censored covariates. Additional functions allow to switch between different parametrizations of Weibull regression used by different \code{R} functions (\code{\link{ConvertWeibull}}, \code{\link{WeibullReg}}, \code{\link{WeibullDiag}}), inference for the mean difference of two arbitrarily censored Normal samples (\code{\link{NormalMeanDiffCens}}), and estimation of canonical parameters from censored samples for several distributional assumptions (\code{\link{ParamSampleCens}}).
@@ -9,8 +10,8 @@
 \tabular{ll}{
 Package: \tab SurvRegCensCov\cr
 Type: \tab Package\cr
-Version: \tab 1.5\cr
-Date: \tab 2022-01-12\cr
+Version: \tab 1.6\cr
+Date: \tab 2023-09-14\cr
 License: \tab GPL (>=2) \cr
 }
 }

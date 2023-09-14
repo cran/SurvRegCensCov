@@ -1,3 +1,7 @@
+SurvRegCensCov_1.6:
+---------------------------------
+- Added \alias{SurvRegCensCov-package} to file 'SurvRegCensCov/man/SurvRegCensCov-package.Rd' to be compliant with "Documenting packages" in R-exts.
+
 SurvRegCensCov_1.5:
 ---------------------------------
 - Corrected typo in TimeSampleWeibull help file.
