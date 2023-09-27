@@ -31,7 +31,7 @@ Klein, J. and Moeschberger, M. (2003).
 2nd edition, Springer.
 }
 
-\author{Sarah R. Haile, \email{sarah.haile@gmail.com}} 
+\author{Sarah R. Haile, Epidemiology, Biostatistics and Prevention Institute (EBPI), University of Zurich, \email{sarah.haile@uzh.ch}}
 
 \seealso{
 Requires \pkg{survival}. A similar plot can be produced using \code{\link{plot.survfit}} and the option \code{fun = "cloglog"}.

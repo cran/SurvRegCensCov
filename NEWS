@@ -1,3 +1,8 @@
+SurvRegCensCov_1.7:
+---------------------------------
+- Updated Weibull AFT Regression Functions in R paper available in vignette to ensure that the reference list is displayed
+- Updated Sarah R. Haile contact information
+
 SurvRegCensCov_1.6:
 ---------------------------------
 - Added \alias{SurvRegCensCov-package} to file 'SurvRegCensCov/man/SurvRegCensCov-package.Rd' to be compliant with "Documenting packages" in R-exts.

@@ -1,5 +1,5 @@
 \documentclass[a4paper, 11pt]{article}
-\usepackage{a4wide}
+\usepackage[a4paper]{geometry}
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{natbib}
 \usepackage{hyperref}
@@ -7,12 +7,14 @@
 %\VignetteDepends{SurvRegCensCov}  
 %\VignetteDepends{survival}  
 
+\geometry{a4paper,margin=30mm,bindingoffset=0mm,heightrounded,}
+
 \newcommand{\prog}[1]{\textsf{#1}}
 \newcommand{\pkg}[1]{\texttt{#1}}
 \newcommand{\code}[1]{\texttt{#1}}
 
 \title{Weibull AFT Regression Functions in \prog{R}}
-\author{Sarah R. Haile\footnote{Kantonsspital St. Gallen, Bedastrasse 1, 9007 St. Gallen (\texttt{sarah.haile@gmail.com})}}
+\author{Sarah R. Haile\footnote{Epidemiology, Biostatistics and Prevention Institute (EBPI), University of Zurich (\texttt{sarah.haile@uzh.ch})}}
 
 <<label = init, echo = FALSE>>=
 if(require(SurvRegCensCov) == FALSE){install.packages("SurvRegCensCov"); library("SurvRegCensCov")}
@@ -83,7 +85,7 @@ Most of the work of the function is actually performed by \code{ConvertWeibull}.
 
 
 \section{\pkg{WeibullDiag}}
-The \code{WeibullDiag} function produces a diagnostic plot for Weibull AFT regression, similar to what is present 
+The \code{WeibullDiag} function produces a diagnostic plot for Weibull AFT regression, similar to what is in
 \cite[Figure 12.2]{klein_03}. It plots $\log \mathrm{Time}$ versus the log of the estimated cumulative hazard estimate. 
 If the Weibull model has adequate fit, then the plots for each of the covariates should be roughly linear and parallel. 
 This function requires the \code{survfit} object to contain \code{strata}, else an error is produced. 
@@ -95,6 +97,7 @@ WeibullDiag(Surv(time, death) ~ factor(stage), data = larynx,
 @
 
 %\bibliographystyle{ims}
+\bibliographystyle{abbrv}
 \bibliography{refs}
 
 \end{document}

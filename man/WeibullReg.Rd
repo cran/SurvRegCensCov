@@ -35,7 +35,7 @@ Klein, J. and Moeschberger, M. (2003).
 2nd edition, Springer.
 }
 
-\author{Sarah R. Haile, \email{sarah.haile@gmail.com}}
+\author{Sarah R. Haile, Epidemiology, Biostatistics and Prevention Institute (EBPI), University of Zurich, \email{sarah.haile@uzh.ch}}
  
 \seealso{Requires the package \pkg{survival}. This function depends on \code{\link{ConvertWeibull}}. See also 
 \code{\link{survreg}}.}

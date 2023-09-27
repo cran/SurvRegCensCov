@@ -42,7 +42,8 @@ Klein, J. and Moeschberger, M. (2003).
 \emph{Survival analysis: techniques for censored and truncated data}. 
 2nd edition, Springer.
 }
-\author{Sarah R. Haile, \email{sarah.haile@gmail.com}}
+
+\author{Sarah R. Haile, Epidemiology, Biostatistics and Prevention Institute (EBPI), University of Zurich, \email{sarah.haile@uzh.ch}}
  
 \seealso{This function is used by \code{\link{WeibullReg}}.}
 \examples{
