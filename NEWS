@@ -1,3 +1,8 @@
+SurvRegCensCov_1.8:
+---------------------------------
+- Updated links to functions from other packages
+- Added "Authors@R" in DESCRIPTION
+
 SurvRegCensCov_1.7:
 ---------------------------------
 - Updated Weibull AFT Regression Functions in R paper available in vignette to ensure that the reference list is displayed

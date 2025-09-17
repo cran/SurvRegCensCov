@@ -8,7 +8,7 @@
   \item{LLOD}{Lower limit where \code{x} should be left-censored at. If no left-censoring, set to \code{NA}.}
   \item{ULOD}{Upper limit where \code{x} should be left-censored at. If no left-censoring, set to \code{NA}.}
 }
-\value{A \code{data.frame} as specified by \code{code = interval2} in \code{\link{Surv}}.}
+\value{A \code{data.frame} as specified by \code{code = interval2} in \code{\link[survival]{Surv}}.}
 
 \author{
 Stanislas Hubeaux, \email{stan.hubeaux@bluewin.ch} 

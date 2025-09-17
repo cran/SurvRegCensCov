@@ -1,13 +1,13 @@
 \name{WeibullReg}
 \alias{WeibullReg}
 \title{Weibull Regression for Survival Data}
-\description{\code{WeibullReg} performs Weibull regression using the \code{\link{survreg}} function, and transforms the 
+\description{\code{WeibullReg} performs Weibull regression using the \code{\link[survival]{survreg}} function, and transforms the 
 estimates to a more natural parameterization. Additionally, it produces hazard ratios (corresponding to the proportional 
 hazards interpretation), and event time ratios (corresponding to the accelerated failure time interpretation) for all 
 covariates.}
 \usage{WeibullReg(formula, data = parent.frame(), conf.level = 0.95)}
 \arguments{
-  \item{formula}{A \code{\link{Surv}} formula.}
+  \item{formula}{A \code{\link[survival]{Surv}} formula.}
   \item{data}{The dataset containing all variables referenced in \code{formula}.}
   \item{conf.level}{Specifies that \eqn{1 - \alpha} level confidence intervals for the hazard and event time ratios should be produced.}
 }
@@ -22,7 +22,7 @@ the model can be found in Carroll (2003). A general overview can be found in the
     \item{HR}{The hazard ratios for each of the predictors, with \eqn{1 - \alpha} level confidence intervals.}
     \item{ETR}{The event time ratios (acceleration factors) for each of the predictors, with \eqn{1 - \alpha} level 
         confidence intervals.}
-    \item{summary}{The summary output from the original \code{\link{survreg}} model.}
+    \item{summary}{The summary output from the original \code{\link[survival]{survreg}} model.}
 }
 
 \references{
@@ -38,7 +38,7 @@ Klein, J. and Moeschberger, M. (2003).
 \author{Sarah R. Haile, Epidemiology, Biostatistics and Prevention Institute (EBPI), University of Zurich, \email{sarah.haile@uzh.ch}}
  
 \seealso{Requires the package \pkg{survival}. This function depends on \code{\link{ConvertWeibull}}. See also 
-\code{\link{survreg}}.}
+\code{\link[survival]{survreg}}.}
 
 \examples{
 data(larynx)

@@ -2,15 +2,15 @@
 \alias{ConvertWeibull}
 \title{Transformation of survreg output for the Weibull distribution}
 \description{
-Transforms output from \code{\link{survreg}} using the Weibull distribution to a more natural parameterization. See details and the vignette for more information.
+Transforms output from \code{\link[survival]{survreg}} using the Weibull distribution to a more natural parameterization. See details and the vignette for more information.
 }
 \usage{ConvertWeibull(model, conf.level = 0.95)}
 \arguments{
-  \item{model}{A \code{\link{survreg}} model, with \code{dist = "weibull"}.}
+  \item{model}{A \code{\link[survival]{survreg}} model, with \code{dist = "weibull"}.}
   \item{conf.level}{Confidence level used to produce two-sided \eqn{1-\alpha/2} confidence intervals for the hazard and event time ratios.}
 }
 \details{    
-The \code{\link{survreg}} function fits a Weibull accelerated failure time model of the form 
+The \code{\link[survival]{survreg}} function fits a Weibull accelerated failure time model of the form 
 
 \deqn{\log t = \mu + \alpha^T Z + \sigma W,}{log t = \mu + \alpha^T Z + \sigma W,} 
 

@@ -7,10 +7,10 @@ SurvRegCens(formula, data = parent.frame(), Density, initial, conf.level = 0.95,
           intlimit = 10^-10, namCens = "VarCens", trace = 0, reltol = 10^-8)
 }
 \arguments{
-  \item{formula}{A formula expression as for other regression models. The response has to be a survival object for right-censored data, as returned by the \code{\link{Surv}} function. The censored covariate is equally specified using \code{\link{Surv}}. See the examples below and the documentation for \code{\link{Surv}}, \code{\link{lm}} and \code{\link{formula}} for details.}
+  \item{formula}{A formula expression as for other regression models. The response has to be a survival object for right-censored data, as returned by the \code{\link[survival]{Surv}} function. The censored covariate is equally specified using \code{\link[survival]{Surv}}. See the examples below and the documentation for \code{\link[survival]{Surv}}, \code{\link[stats]{lm}} and \code{\link[stats]{formula}} for details.}
   \item{data}{A data frame in which to interpret the variables named in the formula argument.}
   \item{Density}{Density function of the censored covariate.}
-  \item{initial}{Initial values for the parameters to be optimized over, ordered according to Scale parameter, Shape parameter, regression parameters (i.e. \eqn{\beta}) linked to the non-censored covariates, regression parameter (i.e. \eqn{\beta}) linked to the censored covariate. A straightforward initial vector is based on ignoring the censoring of the censored covariate and using \code{\link{survreg}}, see the example below for an illustration.}
+  \item{initial}{Initial values for the parameters to be optimized over, ordered according to Scale parameter, Shape parameter, regression parameters (i.e. \eqn{\beta}) linked to the non-censored covariates, regression parameter (i.e. \eqn{\beta}) linked to the censored covariate. A straightforward initial vector is based on ignoring the censoring of the censored covariate and using \code{\link[survival]{survreg}}, see the example below for an illustration.}
   \item{conf.level}{Confidence level of confidence intervals.}  
   \item{intlimit}{In computation of integrals, values of the function to be integrated below \code{intlimit} are set to 0. This makes integration results more accurate and speeds up integration. If the data is such that the absolute values of the underlying baseline Weibull density are very small, i.e. in the range of \code{intlimit}, it is advisable to rescale the time variable, e.g. change the scaling from days to years. A very small value of the estimated \eqn{\lambda} is indicative of that situation.}
   \item{namCens}{Name of censored covariate, to tidy outputs.}
@@ -33,8 +33,8 @@ following components:
 	\item{coeff}{Estimators, confidence intervals, \eqn{p}-values for the for the null hypothesis: \{Estimators is equal to 0\}, and this for each of the parameters of the Weibull survival regression model.}
 	\item{percent.cens}{Percentage of censored observations in the censored covariate.}
 	\item{loglik}{Log-likelihood function value at the estimators.}
-	\item{info.converg}{Convergence information provided by the function \code{\link{optim}}.}
-	\item{info.converg.message}{Message provided by \code{\link{optim}}.}	
+	\item{info.converg}{Convergence information provided by the function \code{\link[stats]{optim}}.}
+	\item{info.converg.message}{Message provided by \code{\link[stats]{optim}}.}	
 The methods \code{\link{print.src}}, \code{\link{summary.src}}, \code{\link{coef.src}}, and \code{\link{logLik.src}} are used to print or obtain a summary, coefficients, or the value of the log-likelihood at the maximum.
 }
 

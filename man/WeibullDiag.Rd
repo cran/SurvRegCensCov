@@ -7,7 +7,7 @@ lines produced should be linear and parallel.
 }
 \usage{WeibullDiag(formula, data = parent.frame(), labels = names(m$strata))}
 \arguments{
-  \item{formula}{A formula containing a \code{\link{Surv}} object, should only contain one categorical 
+  \item{formula}{A formula containing a \code{\link[survival]{Surv}} object, should only contain one categorical 
   predictor, or a set of indicators describing only one predictor.}
   \item{data}{Data set.}
   \item{labels}{A vector containing labels for the plotted lines.}
@@ -22,7 +22,7 @@ is
 \deqn{\log H(t) = \log \lambda + \alpha \log t.}{log H(t) = log \lambda + \alpha log t.}
 }
 \value{Produces a plot of log Time vs. log Estimated Cumulative Hazard for each level of the predictor 
-(similarly to what can be obtained using \code{\link{plot.survfit}} and the \code{fun = "cloglog"} option), 
+(similarly to what can be obtained using \code{\link[survival]{plot.survfit}} and the \code{fun = "cloglog"} option), 
 as well as a data set containing that information.}
 
 \references{
@@ -34,7 +34,7 @@ Klein, J. and Moeschberger, M. (2003).
 \author{Sarah R. Haile, Epidemiology, Biostatistics and Prevention Institute (EBPI), University of Zurich, \email{sarah.haile@uzh.ch}}
 
 \seealso{
-Requires \pkg{survival}. A similar plot can be produced using \code{\link{plot.survfit}} and the option \code{fun = "cloglog"}.
+Requires \pkg{survival}. A similar plot can be produced using \code{\link[survival]{plot.survfit}} and the option \code{fun = "cloglog"}.
 }
 
 \examples{

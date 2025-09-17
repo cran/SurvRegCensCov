@@ -5,7 +5,7 @@
 \usage{ParamSampleCens(censdata, dist = c("normal", "logistic", "gamma", "weibull")[1], 
      null.values = c(0, 1), conf.level = 0.95, initial = NULL)}
 \arguments{
-  \item{censdata}{Dataframe that contains censored data, format as specified by \code{code = interval2} in \code{\link{Surv}}.}
+  \item{censdata}{Dataframe that contains censored data, format as specified by \code{code = interval2} in \code{\link[survival]{Surv}}.}
   \item{dist}{Assumed distribution of the sample.}
   \item{null.values}{Fixed values for hypothesis tests.}
   \item{conf.level}{Confidence level of confidence intervals.}  

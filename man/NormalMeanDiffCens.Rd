@@ -5,8 +5,8 @@
 \usage{NormalMeanDiffCens(censdata1, censdata2, conf.level = 0.95, 
      null.values = c(0, 0, 1, 1))}
 \arguments{
-   \item{censdata1}{Observations of first sample, format as specified by \code{code = interval2} in \code{\link{Surv}}.}
-   \item{censdata2}{Observations of second sample, as specified by \code{code = interval2} in \code{\link{Surv}}.}
+   \item{censdata1}{Observations of first sample, format as specified by \code{code = interval2} in \code{\link[survival]{Surv}}.}
+   \item{censdata2}{Observations of second sample, as specified by \code{code = interval2} in \code{\link[survival]{Surv}}.}
    \item{conf.level}{Confidence level for confidence intervals.}  
    \item{null.values}{Fixed values for hypothesis tests. Four-dimensional vector specifying the hypothesis for \eqn{\mu_1}, \eqn{\mu_2}, \eqn{\sigma_1}, \eqn{\sigma_2}.}
 }
